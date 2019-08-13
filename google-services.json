@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525418465351",
+    "firebase_url": "https://remote-reminder-c809a.firebaseio.com",
+    "project_id": "remote-reminder-c809a",
+    "storage_bucket": "remote-reminder-c809a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525418465351:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525418465351-5j00mc75gr86gc5il8nv4g8m2p8lu75d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWi25TQis5Q_xphKW5oneuE_jLiq5pT0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525418465351-5j00mc75gr86gc5il8nv4g8m2p8lu75d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

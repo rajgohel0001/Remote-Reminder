@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FcmService } from '../fcm.service';
+import { ToastController } from '@ionic/angular';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public fcm: FcmService, public toastCtrl: ToastController) { }
+
+  inViewDidLoad() {
+    this.fcm.getToken();
+    this.fcm.listenToNotifications().pipe(
+      tap(msg => {
+        const toast = this.toastCtrl.create({
+          // message: msg.body,
+          duration: 3000
+        });
+        // toast.present();
+      })
+    )
+    .subscribe();
+  }
 
 }
